@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Navarag! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="birthday-cake">
+                <div class="cake-base"></div>
+                <div class="candle"></div>
+                <div class="flame"></div>
+            </div>
+            <div class="loading-text">Preparing Birthday Surprise...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Balloons -->
+    <div class="floating-balloons">
+        <div class="balloon balloon-1" data-color="#FFD700"></div>
+        <div class="balloon balloon-2" data-color="#8A2BE2"></div>
+        <div class="balloon balloon-3" data-color="#FF69B4"></div>
+        <div class="balloon balloon-4" data-color="#FFA500"></div>
+        <div class="balloon balloon-5" data-color="#FFD700"></div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container" class="confetti-container"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-background" class="particles-background"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="birthday-title">
+                    <h1 class="main-title">
+                        <span class="typed-text" id="typed-text"></span>
+                        <span class="cursor"></span>
+                    </h1>
+                    <div class="age-display">
+                        <span class="turning-text">Turning</span>
+                        <span class="age-counter" id="age-counter">0</span>
+                        <span class="on-date">on September 30th, 2025</span>
+                    </div>
+                </div>
+                
+                <!-- Interactive Birthday Cake -->
+                <div class="interactive-cake">
+                    <div class="cake-layers">
+                        <div class="cake-layer layer-1"></div>
+                        <div class="cake-layer layer-2"></div>
+                        <div class="cake-layer layer-3"></div>
+                    </div>
+                    <div class="candles">
+                        <div class="candle-group">
+                            <div class="candle"><div class="flame"></div></div>
+                            <div class="candle"><div class="flame"></div></div>
+                        </div>
+                        <div class="candle-group">
+                            <div class="candle"><div class="flame"></div></div>
+                            <div class="candle"><div class="flame"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Buttons -->
+                <div class="hero-buttons">
+                    <button class="btn btn--primary celebration-btn" id="celebrate-btn">
+                        <i class="fas fa-party-horn"></i> Let's Celebrate!
+                    </button>
+                    <button class="btn btn--secondary music-toggle" id="music-toggle">
+                        <i class="fas fa-music"></i> <span>Play Music</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-camera"></i> Memories with Navarag
+                </h2>
+                <p class="gallery-instruction">
+                    <!-- 🖼️ Upload your favorite photos with Navarag to make this page even more special! -->
+                </p>
+                
+                <div class="photo-grid">
+                    <!-- Photo placeholders with upload functionality -->
+                    <div class="photo-item">
+                        <img src="./images/memory-1.jpg" alt="Memory with Navarag 1" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-2.jpg" alt="Memory with Navarag 2" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-3.jpg" alt="Memory with Navarag 3" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-4.jpg" alt="Memory with Navarag 4" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-5.jpg" alt="Memory with Navarag 5" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-6.jpg" alt="Memory with Navarag 6" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-7.jpg" alt="Memory with Navarag 7" class="photo-preview">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/memory-8.jpg" alt="Memory with Navarag 8" class="photo-preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="quotes-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-quote-left"></i> Birthday Wishes & Quotes
+                </h2>
+                
+                <div class="quotes-carousel">
+                    <div class="quote-card active" data-index="0">
+                        <blockquote>
+                            <p>"Another year older, another year wiser, and another year more awesome!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="1">
+                        <blockquote>
+                            <p>"May your birthday be filled with laughter, joy, and all your favorite things!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="2">
+                        <blockquote>
+                            <p>"Cheers to 24 years of being incredible!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="3">
+                        <blockquote>
+                            <p>"Here's to another year of adventures and amazing memories!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="4">
+                        <blockquote>
+                            <p>"Happy Birthday to someone who makes the world brighter just by being in it!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="5">
+                        <blockquote>
+                            <p>"Age is merely mind over matter. If you don't mind, it doesn't matter!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="6">
+                        <blockquote>
+                            <p>"Count your life by smiles, not tears. Count your age by friends, not years."</p>
+                        </blockquote>
+                    </div>
+                    <div class="quote-card" data-index="7">
+                        <blockquote>
+                            <p>"The more you praise and celebrate your life, the more there is in life to celebrate!"</p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Quote Navigation -->
+                <div class="quote-navigation">
+                    <button class="quote-nav-btn prev" id="quote-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="quote-dots" id="quote-dots"></div>
+                    <button class="quote-nav-btn next" id="quote-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="music-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-music"></i> Birthday Soundtrack
+                </h2>
+                
+                <div class="music-player">
+                    <div class="music-visualizer" id="music-visualizer">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    
+                    <div class="music-controls">
+                        <button class="music-control-btn" id="play-pause-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hidden audio element -->
+                <audio id="birthday-audio" loop>
+                    <source src="./happy-birthday-404431.mp3" type="audio/wav" >
+                    <!-- Fallback: You would replace this with an actual Happy Birthday song -->
+                </audio>
+            </div>
+        </section>
+
+        <!-- Interactive Gift Boxes -->
+        <section id="gifts" class="gifts-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-gift"></i> Birthday Surprises
+                </h2>
+                
+                <div class="gifts-grid">
+                    <div class="gift-box" data-gift="1">
+                        <div class="gift-wrap">
+                            <div class="gift-bow"></div>
+                        </div>
+                        <div class="gift-content">
+                            <i class="fas fa-heart"></i>
+                            <p>Best Friend Forever!</p>
+                        </div>
+                    </div>
+                    <div class="gift-box" data-gift="2">
+                        <div class="gift-wrap">
+                            <div class="gift-bow"></div>
+                        </div>
+                        <div class="gift-content">
+                            <i class="fas fa-star"></i>
+                            <p>You're Amazing!</p>
+                        </div>
+                    </div>
+                    <div class="gift-box" data-gift="3">
+                        <div class="gift-wrap">
+                            <div class="gift-bow"></div>
+                        </div>
+                        <div class="gift-content">
+                            <i class="fas fa-smile"></i>
+                            <p>Keep Shining!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday Timeline -->
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-calendar"></i> Countdown to Your Special Day
+                </h2>
+                
+                <div class="countdown-timer" id="countdown-timer">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>🎂 Made with ❤️ for Navarag's 24th Birthday 🎂</p>
+            <!-- <p class="footer-note">
+                <i class="fas fa-code"></i> 
+                Customize this page by replacing photos, colors, or adding more content!
+            </p> -->
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
